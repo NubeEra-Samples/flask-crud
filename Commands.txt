@@ -1,0 +1,31 @@
+Python Terminal:-
+-----------------
+python --version
+pip --version
+python.exe -m pip install --upgrade pip
+
+pip install virtualenv
+virtualenv .env 
+source .env/bin/activate
+pip install -r requirements.txt
+
+
+MySQL:-
+-------
+# mysql -h localhost -u root -p
+Enter Password:12345678
+create database dev1;
+use dev1;
+
+CREATE TABLE `dev1`.`users` (
+  `name` VARCHAR(200) NULL,
+  `email` VARCHAR(200) NULL);
+
+select * from dev1.users;
+insert into dev1.users(name,email) values('first','first@gmail.com');
+
+Start Project:-
+---------------
+python app.py
+
+http://PublicIP:5000
