@@ -1,17 +1,35 @@
-Python Terminal:-
+Python Terminal(Windows):-
 -----------------
-python3 --version
+python --version
 pip --version
 python.exe -m pip install --upgrade pip
 
 pip install virtualenv
 virtualenv .env 
-source .env/bin/activate
+.env\Script\activate.bat
 pip install -r requirements.txt
 
 
-MySQL:-
--------
+Python Terminal(Linux):-
+-----------------------
+python3 --version
+sudo apt install python3-pip -y
+alias pip=pip3
+pip --version
+pip install --upgrade pip
+pip install virtualenv
+virtualenv .env 
+source .env/bin/activate
+pip install -r requirements.txt
+
+AWS RDS(MySQL):-
+---------------
+# mysql -h EndPoint -u admin -p
+Enter Password:GeneratedPassword
+create database dev1;
+
+On-Prem (MySQL):-
+-----------------
 # mysql -h localhost -u root -p
 Enter Password:12345678
 create database dev1;
