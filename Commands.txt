@@ -1,6 +1,6 @@
 Python Terminal:-
 -----------------
-python --version
+python3 --version
 pip --version
 python.exe -m pip install --upgrade pip
 
